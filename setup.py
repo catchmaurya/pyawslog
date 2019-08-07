@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="pyawslog",
-    version="0.1.4",
+    version="0.1.5",
     author="Maurya Allimuthu",
     author_email="catchmaurya@gmail.com",
     description="Python AWS Custom Log",
@@ -16,9 +16,10 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/catchmaurya/pyawslog",
     packages=find_packages(),
-    scripts=['pyawslog.py'],
+    # scripts=['pyawslog.py', '__init__.py'],
     install_requires=['boto3>=1.9'],
     classifiers=[
+
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
