@@ -1,10 +1,13 @@
-<snippet>
-  <content><![CDATA[
-# ${1:pyawslog}
-Use this to log into aws cloudwatch-logs.
+# python aws custom log
+A Python package to log message into aws cloud.
+
+## Introduction
+A Python package to log message into aws cloud.
+
 ## Installation
 pip3 install pyawslog
 ## Usage
+```
 logger = log(region_name='region name', 
           aws_access_key_id='access key',
        aws_secret_access_key='secret key',
@@ -15,7 +18,8 @@ LOG_STREAM='custom stream name'
 
 logger.create_log_group(LOG_GROUP)
 logger.create_log_stream(LOG_GROUP, 'aws')
-logger.log_message(LOG_GROUP, LOG_STREAM, 'Hello world, here is our second log message to the same xxxx!')
+logger.log_message(LOG_GROUP, LOG_STREAM, 'Hello world, log message!')
+```
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -31,3 +35,5 @@ TODO: Write license
 ]]></content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
+## Contact
+Please submit an issue if you encounter a bug and please email any questions or requests to catchmaurya@gmail.com
