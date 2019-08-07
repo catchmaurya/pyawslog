@@ -4,6 +4,7 @@ import time
 # logs.create_log_group(logGroupName=LOG_GROUP)
 # logs.create_log_stream(logGroupName=LOG_GROUP, logStreamName=LOG_STREAM)
 class log(object):
+
     def __init__(self, region_name=None, aws_access_key_id=None,aws_secret_access_key=None, endpoint_url=None):
         if region_name == None and aws_access_key_id == None and aws_secret_access_key == None and endpoint_url == None:
             self.logger = boto3.client('logs')

@@ -8,6 +8,7 @@ A Python package to log message into aws cloud.
 pip3 install pyawslog
 ## Usage
 ```
+from pyawslog import log
 logger = log(region_name='region name', 
           aws_access_key_id='access key',
        aws_secret_access_key='secret key',
